@@ -1,0 +1,189 @@
+
+      /*  $$ TO MAKE IMAGE GRADENT  
+      background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.8)),
+      url(location.jpg);
+     
+       background-image: url(location.jpg);
+     
+     */
+/*  NAV BAR*/
+  
+    .main-menu-logo{
+        position: fixed;
+        top:0;
+        z-index: 100;
+        width: 100%;
+        background: #b1b1b14f;
+
+    }
+    .navbar-brand{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff !important;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-item a{
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 0px 20px !important;
+      color: #fff !important;
+  }
+  .nav-item a:hover{
+      color: #000 !important;
+  }
+
+    @media (min-width: 0px) and (max-width: 768px) {
+      .carousel-caption{
+        bottom: 30%;
+        display: block !important;
+      }
+      
+    }
+    
+
+
+
+/***********************/
+     
+.rent-houses-first-page{
+    background-color: aliceblue;
+    height: 110vh;
+    width: 100%;
+   
+    background-size: cover;
+    background-image:  linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.8)), url(location.jpg);
+
+
+ }
+
+
+.rent-text{
+
+font-size: 30px;
+color:white;
+padding-top: 10%;
+text-align: center;
+
+
+
+}
+/* changing the text *
+.rent-text span::before{
+
+
+content: "  ' YOUR AREA'"; /* IMORTANT TO ADD TEXT IN SCREEN /
+font-size: 50px;
+animation: animate 18s infinite;
+animation-delay: 7s;
+color: orangered;
+text-align: center;
+
+
+}
+
+
+@keyframes animate {
+
+0% {
+    content: "  ' YOUR AREA' ";
+    color: orangered;
+   
+ 
+}
+25%{
+    content: "  ' BANGLORE ' ";
+  
+}
+
+50% {
+    content: "  ' TUMKUR '  ";
+    color:orangered;
+
+
+}
+
+75% {
+    content: " ' MYSUR ' ";
+  
+}
+}
+
+/* selection bar in main page */
+
+
+.rent-select{
+
+display: flex;
+align-content: center;
+width: 85%;
+
+margin-left: 10%;
+border-radius: 30px;
+height: 60px;
+background: #b1b1b19f;
+justify-content:space-around;
+justify-content:center ;
+margin-top: 11%;
+
+
+
+}
+.rent-select .selection{
+width: 190px;
+height: 50px;
+font-size: 25px;
+text-align: center;
+
+background-image: linear-gradient(to left, #e34414, #e66108, #e87a02, #e99108, #e8a71a);
+border-radius: 10px;
+margin-top: 5px;
+margin-left: 5%;
+
+
+
+
+
+
+
+}
+.rent-select h1{
+  color: black;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 10px;
+margin-top: 5px;
+font-size: 40px;
+
+
+
+}
+
+.selection option{
+
+
+  font-size: 20px;
+  color: black;
+  background-color:orange;
+  border-radius: 5px;
+/*to hide the drop down arrow *
+appearance: none; */ 
+
+}
+
+
+
+.rent-select h1:hover{
+margin-top: 5px;
+font-size: 45px;
+color: white;
+
+}
+
+.rent-select .selection:hover{
+background: white   ;
+background-image: linear-gradient(to left, #f8ef0f, #fec800, #fda100, #f67a00, #e8511a);}
+
+
+/*;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;*/

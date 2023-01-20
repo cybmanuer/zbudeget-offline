@@ -1,0 +1,436 @@
+html{
+    scroll-behavior: smooth;
+}
+/*body{
+    background-image: url(rent.jpg);
+    background-size: cover;
+}*/
+img{
+  width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+    
+}
+
+
+/* rent main page heading line and buttons */
+.content{
+  width: 100%;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+
+  text-align: center;
+  color:#fff;
+  color: white;
+  
+}
+.content h1{
+  
+  font-size: 70px;
+  margin-top: 80px;
+  margin-bottom: 10%;
+}
+
+/*useless*
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}*/
+.rent-butt button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 50px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 0px solid #009688;
+
+
+  background: transparent;
+
+
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.rent-butt span{
+  background: #009688;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  
+}
+ 
+button:hover span{
+  width: 100%;
+  color: white;
+  background-color: #000;
+}
+button:hover{
+  border:none;
+  color: black;
+  background-color: #fff;
+}
+
+
+/*888888888888888888888*/
+
+
+
+
+
+
+.rent-background button{
+    font-size: 30px;
+    height: 50px;
+    width: 80px;
+    
+  
+}
+.rent-but{
+display: inline-flex;
+left: 300;
+
+}
+
+/* nav bar*/
+.main-menu{
+	position: fixed;
+	top:0;
+	z-index: 100;
+	width: 100%;
+  padding: 5px;
+  background: #b1b1b14f;/*this make the nav bar transpatrnt */ 
+}
+.navbar-logo{
+
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff !important;
+     font-size: 35px;
+}
+.nav-item a{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0px 20px !important;
+	color: #fff !important;  
+}
+.nav-item a:hover{
+	color: #000 !important;
+}
+
+/* rent second   ---   card area*/
+.rent-main{
+    
+   background-color: #F3CB06;
+   background-color: #F3E406;
+    background-size: cover;
+  
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.rent-main h1{
+    color: #005246;
+   box-shadow: 10px black;
+    text-align: center;
+    padding-top: 100px;
+    font-family: fantasy;
+    animation: texts 14s infinite;
+
+}
+@keyframes texts {
+  0%{
+    color: #00A037;
+
+   }
+   25%{
+    color: #68B21B;
+   }
+   50%{
+   color:#25A968;
+
+   }
+   75%{
+    color: #008B4C;
+   }
+   100%{
+    color: #005246;
+
+   }
+
+}
+
+
+
+.rent-content{
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+}
+
+
+/* card hover */
+:root {
+  --surface-color: #b1b1b18f;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+  
+  
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+    width: 90%;
+    cursor:pointer;
+   
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1.2em;
+    margin: 0 0 .3em;
+    color: black;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: black;  
+  }
+  
+  
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: black;
+    font-size: 17px;
+  }    
+.card span{
+  background: #009688;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+background-color: #00A037;
+animation: sapning 14s infinite;
+
+}
+@keyframes sapning{
+  0%{
+    background-color: #00A037;
+
+   }
+   25%{
+    background-color: #68B21B;
+   }
+   50%{
+    background-color:#25A968;
+
+   }
+   75%{
+    background-color: #008B4C;
+   }
+   100%{
+    background-color: #005246;
+
+   }
+ 
+ }
+
+
+ /* 2nd card */
+
+
+
+
+
+
+
+
+
+
+ @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+/*
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f7f8fc;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+}*/
+
+.card2-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f7f8fc;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+}
+
+.container2 {
+  display: flex;
+  width: 1040px;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card2 {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+
+
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 22px;
+  margin:0;
+  margin-left: 60px;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+.tag-teal {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}

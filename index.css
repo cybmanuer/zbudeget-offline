@@ -1,0 +1,647 @@
+
+
+
+
+html {
+  scroll-behavior: smooth;
+  /*scroll-behavior: auto|smooth|initial|inherit;*/
+
+}
+a :link {
+  text-decoration: none;
+  
+}
+
+
+
+.avl{
+  height: 165px;
+  width: 200px;
+  margin-top: -38%;
+  margin-left: 3%;
+}
+
+.avl img{
+  height: 150px;
+  width: 100%;
+  margin-top: -1%;
+  
+}
+.avl h6{
+
+  height: 300px;
+  width: 200px;
+  margin-top: -100%;
+  margin-left: 13%;
+}
+.avl span{
+  font-size: 30px;
+  color: red;
+}
+
+/* -----------HEADER-NAV BAR-------------------------- */
+
+
+.banner {
+	height: 100vh;
+}
+/* the background of the nav bar*/
+.main-menu{
+	position: fixed;
+	top:0;
+	z-index: 100;
+	width: 100%;
+  padding: 5px;
+
+  background: #b1b1b14f;/*this make the nav bar transpatrnt */
+  
+}
+
+.navbar-logo{
+
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff !important;
+  font-size: 35px;
+  margin-left: -60px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item a{
+  margin-right: -20px;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0px 25px !important;
+	color: #fff !important;
+}
+.nav-item a:hover{
+	color: #000 !important;
+}
+
+
+
+/* scroll arrow down */
+
+.arrow{
+  font-size: 90px;
+  color: #000;
+  margin-top: 24%;
+  animation: arrow1 3s infinite;
+}
+
+
+@keyframes arrow1{
+  0%{
+    margin-top: 23%;
+    
+  }
+
+  50%{
+    margin-top: 25%;
+  }
+  100%{
+    margin-top: 23%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,        MAIn   page     ,,,,*/
+ 
+
+.main {
+	background: linear-gradient(-45deg,#ee7752,  deeppink , #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 90s ease infinite;
+	height: 100vh;
+  
+  animation-name: gradient;
+  
+}
+
+/* middel text can be editted here*/
+.con{
+
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 9%;
+  color: white;
+}
+.con span{
+  font-size: 20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+img{
+  padding-top: 0%;
+  margin-top: -7%;
+}
+.pa p{
+  margin-top: -60px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 20px;
+ color: white;
+ 
+}
+
+.pa span{
+  font-size: 40px;
+ 
+  color: black;
+}
+
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.inner{
+text-align: center;
+margin-top: 0%;
+}
+
+.h{
+  color: antiquewhite;
+  text-shadow: #202020;
+  padding-top: 20%;
+  font-family: Monaco;
+}
+.w{
+  color: red;
+  font-size: 40px;
+}
+
+
+
+/************* 2nd */
+
+
+
+
+.second {
+  background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+  background-size: 300% 300%;
+  -webkit-animation: Background 25s ease infinite;
+  -moz-animation: Background 25s ease infinite;
+  animation: Background 25s ease infinite;
+  height: 800px;
+  height: 110vh;
+}
+.text h1{
+  padding-bottom: 10%;
+  color: black;
+  font-family:Cambria, Cochin, Georgia;
+}
+
+
+@-webkit-keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
+.full-screen {
+  
+  /*top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;   */
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  /* works with row or column */
+  
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button1{
+  color: white;
+  font-size: 30px;
+  height: 55px;
+  width: 53%;
+  font-family: Cursive;
+  background: linear-gradient(-45deg,#ee7752,  deeppink ,deeppink ); 
+  border: 0px solid black;
+
+}
+
+.button1:hover{
+  box-shadow: 6px 6px 10px 6px black;
+ 
+
+}
+.button1 i{
+  color: white;
+  animation: anim 3s infinite;
+  
+
+}
+
+
+@keyframes anim{
+
+
+      0%{
+        margin-left: 0px;
+      }
+      50%{
+        margin-left: 20px;
+        }
+      100%{
+        margin-left: 0px;
+        }
+}
+
+/*  third page*/
+
+
+.third {
+	background: linear-gradient(253deg, #CC4971, #AB933E, #9F4BB5,#CD6C13);
+	background-size: 400% 400%;
+	animation: gradient 90s ease infinite;
+  height: 105vh;
+  animation-name: gradient1;
+  
+  
+
+  
+}
+
+@keyframes gradient1 {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
+
+.text1 h1{
+  padding-bottom: 10%;
+  font-family:Cambria, Cochin, Georgia;
+  color: black;
+
+}
+
+
+
+.button2{
+  color: white;
+  font-size: 30px;
+  height: 55px;
+  width: 69%;
+  font-family: Cursive;
+  background: linear-gradient(-45deg,#ee7752,  deeppink ,deeppink ); 
+  border: 0px solid black;
+
+}
+
+.button2:hover{
+  box-shadow: 6px 6px 10px 6px black;
+ 
+
+}
+.button2   i{
+  color: white;
+  animation: anim 3s infinite;
+  
+
+}
+
+
+/* FOURTH */
+.fourth{
+	background: linear-gradient(-45deg, #EC9438, #EB3F50, #A65FCC, #009EE0 );
+	background-size: 400% 400%;
+	animation: gradient 90s ease infinite;
+	height: 110vh;
+  
+  animation-name: gradient;
+
+  
+}
+.text1 h1{
+  padding-bottom: 20%;
+  font-family:Cambria, Cochin, Georgia;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER */
+
+
+.new_footer_area {
+  background: #fbfbfd;
+  
+}
+
+
+.new_footer_top {
+  padding: 100px 0px 270px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+/*  FOTTER BOTTOM AREA */
+
+.new_footer_area .footer_bottom {
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+/* fotter last line copy right  */
+.footer_bottom {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #7f88a6;
+  color: red;
+  padding: 27px 0px;
+}
+/* touh with us code  */
+
+.new_footer_top .company_widget p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #6a7695;
+  
+  margin-bottom: 20px;
+}
+
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+  border-width: 1px;
+  margin-top: 20px;
+}
+.btn_get_two {
+  background: #5e2ced;
+  color: white;
+}
+
+.btn_get_two:hover {
+  background: transparent;
+  color: #5e2ced;
+}
+.btn_get:hover {
+  color: #fff;
+  background: #6754e2;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* end ----------- */
+
+
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+
+/* content of heading code */
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+  color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+  margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+  margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+  margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+  margin-bottom: 0px;
+}
+
+
+/* SOCIAL MEDIA ICONS */
+.new_footer_top .f_social_icon a {
+  width: 44px;
+  height: 44px;
+  line-height: 43px;
+  background: transparent;
+  border: 1px solid #e2e2eb;
+  font-size: 24px;
+}
+.f_social_icon a {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 45px;
+  color: #858da8;
+  display: inline-block;
+  background: #ebeef5;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/* .ti-facebook:before {
+  content: "\e741";
+}
+.ti-twitter-alt:before {
+  content: "\e74b";
+}
+.ti-vimeo-alt:before {
+  content: "\e74a";
+}
+.ti-pinterest:before {
+  content: "\e731";
+} */
+
+
+.new_footer_top .f_social_icon a:hover {
+  background: #5e2ced;
+  border-color: #5e2ced;
+color:white;
+}
+.new_footer_top .f_social_icon a + a {
+  margin-left: 4px;
+}
+
+
+/* heading code S */
+.new_footer_top .f-title {
+  margin-bottom: 20px;
+  color: #263b5e;
+  
+}
+/* font weight of heading */
+.f_600 {
+  font-weight: 600;
+}
+
+.f_size_18 {
+  font-size: 18px;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  color: #4b505e;
+} */
+
+.new_footer_top .f_widget.about-widget .f_list li a {
+  color: #6a7695;
+}
+/* END OF UPPED INFORMATION AREA  */
+
+/* BOTTOM IMAGE AREA */
+
+/* backgroun iamge of nature */
+.new_footer_top .footer_bg {
+  position: absolute;
+  bottom: 0;
+  background: url("photos/footer_bg.png") no-repeat scroll center 0;
+  width: 100%;
+  height: 266px;
+}
+
+/* car image area */
+.new_footer_top .footer_bg .footer_bg_one {
+  background: url("photos/car.gif") no-repeat center center;
+  width: 330px;
+  height: 105px;
+  background-size:100%;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  -webkit-animation: myfirst 22s linear infinite;
+
+  animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+  background: url("photos/cyclist.gif") no-repeat center center;
+  width: 88px;
+  height: 100px;
+  background-size:100%;
+  bottom: 0;
+  left: 38%;
+  position: absolute;
+  -webkit-animation: myfirst 30s linear infinite;
+  animation: myfirst 30s linear infinite;
+}
+
+/* ANIMATION OF THE CAR AND CYCLE  */
+
+@keyframes myfirst {
+0% {
+  left: -25%;
+}
+
+100% {
+  left: 100%;
+}
+} 
+
+/*************footer End*****************/
+

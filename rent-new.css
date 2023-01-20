@@ -1,0 +1,777 @@
+
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  /*scroll-behavior: auto|smooth|initial|inherit;*/
+
+}
+
+
+/* nav bar */
+
+/* -----------HEADER-NAV BAR-------------------------- */
+
+
+.banner {
+	height: 100vh;
+}
+
+/* the background of the nav bar*/
+.main-menu{
+	position: fixed;
+	top:0;
+	z-index: 100;
+	width: 100%;
+  padding: 5px;
+  background: #b1b1b14f;/*this make the nav bar transpatrnt */
+
+}
+
+.navbar-logo{
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff !important;
+  font-size: 35px;
+  margin-left: -60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item a{
+  margin-right: -20px;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0px 25px !important;
+	color: #fff !important;
+}
+
+.nav-item a:hover{
+	color: #000 !important;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .carousel-caption{
+    bottom: 30%;
+    display: block !important;
+  }
+  
+}
+
+
+/*..............FIRST PAGE CSS...............*/
+
+
+.rent-new-first{
+height: 100vh;
+width: 100%;
+background: url(housebg.jpg);
+background-size: cover;
+}
+
+.rent-new-text{
+    font-size: 25px;
+    margin-left: 45%;
+    margin-top:-29%;
+    font-family:Garamond ;
+
+}
+
+.rent-new-text h3{
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+.rent-new-text h4{
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.rent-new-img img{
+    margin-top: 8%;
+    margin-left: 200px;
+    height: 500px;
+    width: 500px;
+
+}
+
+.rent-new-text span::before{
+
+    content: " ";   /* IMORTANT TO ADD TEXT IN SCREEN */
+    font-size: 30px;
+    animation: animate 20s infinite;
+    color: black;
+    text-align: center;
+    font-family: Copperplate, Papyrus, fantasy;  
+    }
+    
+ /* ANIMATION OF THALOKES IN FIRST PAGE */   
+    @keyframes animate {
+    
+    0% {
+        content: "  'TUMKUR' ";
+       
+     
+    }
+    25%{
+        content: "  ' KUNIGAL' ";
+      
+    }
+    
+    50% {
+        content: "  'KORATAGERE'  ";
+    
+    
+    }
+    
+    75% {
+        content: " ' GUBBI ' ";
+      
+    }
+    100%{
+      content: " ' MADHUGIRI'";
+    }
+}
+    
+/* MESSAGE BOX IMAGE IN THE HAND OF BOY IN FIRST PAGE */
+.message img{
+    margin-top: -26%;
+   
+    margin-left: 33%;
+    animation: mess 3s 9;
+    
+}
+@keyframes mess{
+  0%{
+    margin-top: -26%;
+  }
+  50%{
+    margin-top: -29%;
+  }
+  100%{
+    margin-top: -26%; 
+  }
+}
+
+   
+/* BUTTON OF FIRST PAGE */
+.rent-new-button{        
+    margin-left: 54%;
+    padding-top: 100px;
+}
+
+.rent-new-button button{
+  color: white;
+  font-size: 30px;
+  height: 55px;
+  width: 40%;
+  font-family: Cursive;
+  background: linear-gradient(-45deg,#ee7752,  deeppink ,deeppink ); 
+  border: 0px solid black;
+} 
+
+.rent-new-button button:hover{
+  box-shadow: 6px 6px 10px 6px black;
+
+}
+
+.rent-new-button button i{
+  color: white;
+  animation: anim2 2s infinite;
+}
+
+@keyframes anim2{
+
+
+  0%{
+    padding-top: -20px;
+  }
+  50%{
+    padding-top: 20px;
+
+    }
+  100%{
+    padding-top: -20px;
+
+    }
+}
+
+.rent-new-button h1{
+  font-size: 30px;
+  text-align: center;
+  margin-left: -60%;
+  }
+
+/*PUP UP box OF MESSAGE IMMAGE */
+
+
+/* this defines were the popup should be opened and other background designs */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;/* shows in homany second pop up should be closrd U*/
+    opacity: 0;
+    visibility: hidden;
+   
+  }
+
+/* THE MAGIC HAPPENS HERE !.....   it tels after opning whatshould be done */
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: red;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+
+/* END OF FIRST PAGE CSS*/
+
+
+/* SECOND PAGE CSS CODE  */
+
+.rent-houses-second-page{
+  width: 100%;
+  height: 445%;
+  background-color:transparent  ;
+}
+
+/* middle part (house details ) css code */
+.rent-houses-new-middle{
+    width: 78%;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  /*  background-color:transparent;*/
+    background-color: white;
+    
+}
+
+/*card area */ 
+.rent-new-card {
+    height: 300px;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 10%; 
+    background-color: #b1b1b14f;
+    border: 1px solid black;
+
+    box-shadow: 8px 8px 8px 8px #888888; 
+    /* 1->for shadow side(r , l) ,2nd px-> shadow side up or down,3rd-> shadow strength , 4th-> sizde of background shadow     */   
+}
+
+.rent-new-card:hover{
+  box-shadow: 10px 12px 10px 10px #888888; 
+}
+
+.rent-new-card .text{
+    margin-left: 35%;
+    margin-top: -35%;
+    margin-top: -265px;
+
+}
+.text p{
+    padding-top: 10px;
+}
+.text h2{  
+    margin-top: -40px;
+    margin-left: 220px;
+    font-size: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    height: 50px;
+    float: right;
+    margin-top: -80px;
+    background-color: transparent;
+    margin-right: 10px;  
+}
+
+.icons img:hover{
+        width: 55px;
+        height: 55px;
+}
+
+.rent-cont{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #b1b1b14f;
+    margin-top: -10px;
+    width: 70%;
+    float: right;   
+}
+
+table{
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    
+}
+td p{
+    color: red;
+    margin-top: -10px;
+}
+
+
+
+.rent-new-card-fotter button{
+    background-color: aqua;
+   float: right;
+    margin-top: 20px;
+    width: 30%;
+    height: 40px;
+    margin-right: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.rent-new-card-fotter button:hover{
+  background-color: pink;
+
+}
+
+
+.rent-new-card-fotter h5{
+    float: left;
+    color:black;
+    margin-top: 5%;
+    margin-left: 20px;
+
+}
+
+.rent-new-card-fotter p{
+    text-align: center;
+    color:black;
+    margin-top: 14%;
+    margin-left: 35%;
+    height: 20px;
+    width: 50%;
+
+}
+
+.map iframe{
+    float: right;
+    margin-top: -25%;
+    margin-right: 60px;
+    box-shadow: 10px 10px 10px 10px #888888; 
+
+}
+
+
+/*  POPUP CODE OF SAVE AND SHARE BUTTON INSIDE THE CARD */
+.overlay2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;/* shows in homany second pop up should be closrd U*/
+  opacity: 0;
+  visibility: hidden;
+ 
+}
+.overlay2:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup2 {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+/* pop up for save button */
+.popup3 {
+  margin: 70px auto;
+  padding: 20px;
+  background:greenyellow;
+  border-radius: 5px;
+  width: 10%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup2 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup2 .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup2 .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/* sider image inside  the card */
+
+
+.slider {
+    width: 250px;
+    height: 260px;
+    display: flex;
+    overflow-x: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+    
+  }
+
+
+  .slider img{
+    width: 230px;
+    height: 220px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: zoom-in;
+  }
+  .slide {
+    
+    width: 250px;
+    scroll-behavior: smooth;
+    flex-shrink: 0;
+  
+  }
+
+  .slider img:hover{
+    width: 240px;
+    height: 230px;
+    overflow: hidden;
+  }
+
+
+/*  LEFT SIDE BAR AREA CODE  */
+
+
+.left-field{
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 10px;
+  height: 110vh;
+  width:20%;
+  float: left;
+  cursor: scroll;
+  overflow-x: auto;
+  background: url(leftbg.jpg);
+}
+
+.left-field select{
+    font-size: 15px;
+    float: right;
+    text-align: center;    
+}
+.left-field label{
+
+  font-size: 17px;
+  color: black  ;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.left-field option{
+  padding: 50px;
+  color: red;
+  
+}
+
+.selection select{
+  background-color: transparent;
+  width: 80%;
+  height: 35px;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-top: 8px;
+  margin-right: 20px;
+
+}
+.selection input{
+  font-size: 20px;
+  width: 70%;
+}
+
+
+/* submit left field */
+.sub{
+  text-align: center;
+  
+  width: 100%;
+
+}
+.sub input{
+    width: 70%;
+    height: 40px;
+    margin-top: 50px;
+    background-color: aqua;
+}
+
+
+/*  FOURTH PAGE AREA HOW V WORK  */
+
+.rent-main{ 
+  background-color: #888888;
+   background-size: cover;
+   width: 100%;
+   height: 100%; 
+}
+
+
+.rent-main h1{
+   color: black;
+   text-align: center;
+   padding-top: 100px;
+   font-family: fantasy;
+}
+.rent-content{
+   display: flex;
+   flex-wrap: wrap;
+   display: grid;
+}
+
+/* card hover */
+:root {
+ --surface-color: #b1b1b18f;
+ --curve: 40;
+}
+
+* {
+ box-sizing: border-box;
+}
+ 
+ 
+ .cards {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 2rem;
+   margin: 4rem 5vw;
+   padding: 0;
+   list-style-type: none;
+
+ }
+ 
+ .card {
+   position: relative;
+   display: block;
+   height: 100%;  
+   
+   border-radius: calc(var(--curve) * 1px);
+   overflow: hidden;
+   text-decoration: none;
+   width: 90%;
+   cursor:pointer;
+  
+ }
+ 
+ .card__image {      
+   width: 100%;
+   height: auto;
+   height: 100%;
+ }
+ 
+ .card__overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 1;      
+   border-radius: calc(var(--curve) * 1px);    
+   background-color: var(--surface-color);      
+   transform: translateY(100%);
+   transition: .2s ease-in-out;
+ }
+ 
+ .card:hover .card__overlay {
+   transform: translateY(0);
+ }
+ 
+ .card__header {
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 2em;
+   padding: 2em;
+   border-radius: calc(var(--curve) * 1px) 0 0 0;    
+   background-color: var(--surface-color);
+   transform: translateY(-100%);
+   transition: .2s ease-in-out;
+ }
+ 
+ .card__arc {
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   bottom: 100%;
+   right: 0;      
+   z-index: 1;
+ }
+ 
+ .card__arc path {
+   fill: var(--surface-color);
+   d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+ }       
+ 
+ .card:hover .card__header {
+   transform: translateY(0);
+ }
+ 
+ .card__thumb {
+   flex-shrink: 0;
+   width: 50px;
+   height: 50px;      
+   border-radius: 50%;      
+ }
+ 
+ .card__title {
+   font-size: 1.2em;
+   margin: 0 0 .3em;
+   color: black;
+ }
+ 
+ .card__tagline {
+   display: block;
+   margin: 1em 0;
+   font-family: "MockFlowFont";  
+   font-size: .8em; 
+   color: black;  
+ }
+ 
+ 
+ 
+ .card__description {
+   padding: 0 2em 2em;
+   margin: 0;
+   color: #D7BDCA;
+   
+   font-family: "MockFlowFont";   
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
+   overflow: hidden;
+   color: black;
+   font-size: 19px;
+   margin-top: 10px;
+ }    
+.card span{
+ background: #009688;
+ height: 100%;
+ width: 100%;
+ border-radius: 25px;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ z-index: -1;
+background-color: #00A037;
+animation: sapning 14s infinite;
+
+}
+
+/* END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
